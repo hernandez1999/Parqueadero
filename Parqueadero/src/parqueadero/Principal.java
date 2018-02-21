@@ -1,11 +1,9 @@
 
 package parqueadero;
 
-
-public class PrincipalTM {
+public class Principal {
     
     public static void main (String [] args){
-        
         
         
     }   
