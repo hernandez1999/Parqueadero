@@ -31,9 +31,9 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
         textoMarca = new javax.swing.JTextField();
         boton1 = new javax.swing.JButton();
-        textoMarca1 = new javax.swing.JTextField();
-        textoMarca2 = new javax.swing.JTextField();
-        textoMarca3 = new javax.swing.JTextField();
+        textoCilindraje = new javax.swing.JTextField();
+        textoModelo = new javax.swing.JTextField();
+        textoAño = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         Cilindraje = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -61,33 +61,33 @@ public class FichaVehiculo extends javax.swing.JFrame {
             }
         });
 
-        textoMarca1.setText("jTextField1");
-        textoMarca1.addMouseListener(new java.awt.event.MouseAdapter() {
+        textoCilindraje.setText("jTextField1");
+        textoCilindraje.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                textoMarca1MouseEntered(evt);
+                textoCilindrajeMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                textoMarca1MouseExited(evt);
+                textoCilindrajeMouseExited(evt);
             }
         });
 
-        textoMarca2.setText("jTextField1");
-        textoMarca2.addMouseListener(new java.awt.event.MouseAdapter() {
+        textoModelo.setText("jTextField1");
+        textoModelo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                textoMarca2MouseEntered(evt);
+                textoModeloMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                textoMarca2MouseExited(evt);
+                textoModeloMouseExited(evt);
             }
         });
 
-        textoMarca3.setText("jTextField1");
-        textoMarca3.addMouseListener(new java.awt.event.MouseAdapter() {
+        textoAño.setText("jTextField1");
+        textoAño.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                textoMarca3MouseEntered(evt);
+                textoAñoMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                textoMarca3MouseExited(evt);
+                textoAñoMouseExited(evt);
             }
         });
 
@@ -123,10 +123,10 @@ public class FichaVehiculo extends javax.swing.JFrame {
                                     .addComponent(jLabel2))
                                 .addGap(22, 22, 22)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textoMarca3, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textoMarca1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textoAño, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textoCilindraje, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(textoMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textoMarca2, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(textoModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -138,15 +138,15 @@ public class FichaVehiculo extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textoMarca1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textoCilindraje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Cilindraje))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textoMarca2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textoModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textoMarca3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textoAño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(27, 27, 27)
                 .addComponent(boton1)
@@ -161,43 +161,43 @@ public class FichaVehiculo extends javax.swing.JFrame {
     }//GEN-LAST:event_textoMarcaMouseEntered
 
     private void textoMarcaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarcaMouseExited
-        
-        textoMarca.setText("Saliste");
-        
-        boton1.setVisible(true);
+
     }//GEN-LAST:event_textoMarcaMouseExited
 
     private void boton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseEntered
 
     }//GEN-LAST:event_boton1MouseEntered
 
-    private void textoMarca1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca1MouseEntered
+    private void textoCilindrajeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoCilindrajeMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca1MouseEntered
+    }//GEN-LAST:event_textoCilindrajeMouseEntered
 
-    private void textoMarca1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca1MouseExited
+    private void textoCilindrajeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoCilindrajeMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca1MouseExited
+    }//GEN-LAST:event_textoCilindrajeMouseExited
 
-    private void textoMarca2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca2MouseEntered
+    private void textoModeloMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoModeloMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca2MouseEntered
+    }//GEN-LAST:event_textoModeloMouseEntered
 
-    private void textoMarca2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca2MouseExited
+    private void textoModeloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoModeloMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca2MouseExited
+    }//GEN-LAST:event_textoModeloMouseExited
 
-    private void textoMarca3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca3MouseEntered
+    private void textoAñoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoAñoMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca3MouseEntered
+    }//GEN-LAST:event_textoAñoMouseEntered
 
-    private void textoMarca3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoMarca3MouseExited
+    private void textoAñoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoAñoMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_textoMarca3MouseExited
+    }//GEN-LAST:event_textoAñoMouseExited
 
     private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
         
-        this miMotoEnFichaVehiculo 
+        String a=textoMarca.getText();
+        
+        textoCilindraje.setText(a);
+        textoModelo.setText(a);
     }//GEN-LAST:event_boton1MouseClicked
 
     /**
@@ -241,9 +241,9 @@ public class FichaVehiculo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField textoAño;
+    private javax.swing.JTextField textoCilindraje;
     private javax.swing.JTextField textoMarca;
-    private javax.swing.JTextField textoMarca1;
-    private javax.swing.JTextField textoMarca2;
-    private javax.swing.JTextField textoMarca3;
+    private javax.swing.JTextField textoModelo;
     // End of variables declaration//GEN-END:variables
 }
