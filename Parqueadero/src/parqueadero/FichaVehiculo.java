@@ -41,13 +41,17 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        textoMarca.setText("jTextField1");
         textoMarca.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 textoMarcaMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 textoMarcaMouseExited(evt);
+            }
+        });
+        textoMarca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textoMarcaActionPerformed(evt);
             }
         });
 
@@ -61,7 +65,6 @@ public class FichaVehiculo extends javax.swing.JFrame {
             }
         });
 
-        textoCilindraje.setText("jTextField1");
         textoCilindraje.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 textoCilindrajeMouseEntered(evt);
@@ -70,8 +73,12 @@ public class FichaVehiculo extends javax.swing.JFrame {
                 textoCilindrajeMouseExited(evt);
             }
         });
+        textoCilindraje.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textoCilindrajeActionPerformed(evt);
+            }
+        });
 
-        textoModelo.setText("jTextField1");
         textoModelo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 textoModeloMouseEntered(evt);
@@ -81,7 +88,6 @@ public class FichaVehiculo extends javax.swing.JFrame {
             }
         });
 
-        textoAño.setText("jTextField1");
         textoAño.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 textoAñoMouseEntered(evt);
@@ -196,9 +202,19 @@ public class FichaVehiculo extends javax.swing.JFrame {
         
         String a=textoMarca.getText();
         
-        textoCilindraje.setText(a);
-        textoModelo.setText(a);
+        textoCilindraje.setText("Hola, llename");
+        textoModelo.setText("Hola, llename");
+        textoAño.setText("Hola, llename");
+        
     }//GEN-LAST:event_boton1MouseClicked
+
+    private void textoMarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoMarcaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textoMarcaActionPerformed
+
+    private void textoCilindrajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoCilindrajeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textoCilindrajeActionPerformed
 
     /**
      * @param args the command line arguments
