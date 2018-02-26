@@ -6,6 +6,7 @@
 package parqueadero;
 
 import Vehiculos.Moto;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,10 +14,17 @@ import Vehiculos.Moto;
  */
 public class FichaVehiculo extends javax.swing.JFrame {
     
+    //Los arreglos de objetos 
+    //Declarar:
+    Moto misMotos[]= new Moto[50];
+    
     Moto miMoto = new Moto();
-
+    //Crear 
 
     public FichaVehiculo() {
+            for(int i=0;i<50;i++){
+            misMotos[i] = new Moto();
+            }
         initComponents();
     }
 
@@ -200,10 +208,14 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
     private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
         
+        //String.valueOf(5); convertir int a text 
+        
         miMoto.marca=textoMarca.getText();
-        miMoto.año=Integer.parseInt(textoAño.getText());
+        miMoto.año=Integer.parseInt(textoAño.getText()); //text a int        
         miMoto.cilindraje=Integer.parseInt(textoCilindraje.getText());
         miMoto.modelo=textoModelo.getText();
+        
+        JOptionPane.showMessageDialog(null, "Registro exitoso");
         
     }//GEN-LAST:event_boton1MouseClicked
 

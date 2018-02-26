@@ -14,8 +14,6 @@ public class Principal extends Vehiculo{
         
         Moto miMoto=new Moto();
         
-        
-
         //Modificar
         miFicha.miMoto = miMoto;
     }   
