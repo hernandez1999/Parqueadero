@@ -2,8 +2,9 @@
 package parqueadero;
 
 import Vehiculos.Moto;
+import Vehiculos.Vehiculo;
 
-public class Principal {
+public class Principal extends Vehiculo{
     
     public static void main (String [] args){
         
@@ -13,7 +14,9 @@ public class Principal {
         
         Moto miMoto=new Moto();
         
+        
+
         //Modificar
-        miFicha.miMotoEnFichaVehiculo = miMoto;
+        miFicha.miMoto = miMoto;
     }   
 }

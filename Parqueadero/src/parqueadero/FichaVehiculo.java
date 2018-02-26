@@ -13,7 +13,7 @@ import Vehiculos.Moto;
  */
 public class FichaVehiculo extends javax.swing.JFrame {
     
-    Moto miMotoEnFichaVehiculo = new Moto();
+    Moto miMoto = new Moto();
 
 
     public FichaVehiculo() {
@@ -200,11 +200,10 @@ public class FichaVehiculo extends javax.swing.JFrame {
 
     private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
         
-        String a=textoMarca.getText();
-        
-        textoCilindraje.setText("Hola, llename");
-        textoModelo.setText("Hola, llename");
-        textoAño.setText("Hola, llename");
+        miMoto.marca=textoMarca.getText();
+        miMoto.año=Integer.parseInt(textoAño.getText());
+        miMoto.cilindraje=Integer.parseInt(textoCilindraje.getText());
+        miMoto.modelo=textoModelo.getText();
         
     }//GEN-LAST:event_boton1MouseClicked
 
