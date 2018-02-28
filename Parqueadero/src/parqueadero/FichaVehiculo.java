@@ -210,17 +210,35 @@ public class FichaVehiculo extends javax.swing.JFrame {
         
         //String.valueOf(5); convertir int a text 
         
-        miMoto.marca=textoMarca.getText();
-        miMoto.año=Integer.parseInt(textoAño.getText()); //text a int        
-        miMoto.cilindraje=Integer.parseInt(textoCilindraje.getText());
-        miMoto.modelo=textoModelo.getText();
+ 
+        miMoto.marca=textoMarca.getText();   
+ 
+        try{
+        miMoto.cilindraje=Integer.parseInt(textoCilindraje.getText());    
+        }
+        catch (Exception e)
+        {
+        JOptionPane.showMessageDialog(null, "Dato no valido para cilindraje");    
+        }
         
+        miMoto.modelo=textoModelo.getText();
+
+        try{
+        miMoto.año=Integer.parseInt(textoAño.getText()); //text a int  
+ 
+        }
+        catch(Exception e)
+        {
+        JOptionPane.showMessageDialog(null, "Dato no valido para año");
+
+        }
+ 
         JOptionPane.showMessageDialog(null, "Registro exitoso");
         
     }//GEN-LAST:event_boton1MouseClicked
 
     private void textoMarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoMarcaActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code her
     }//GEN-LAST:event_textoMarcaActionPerformed
 
     private void textoCilindrajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoCilindrajeActionPerformed
